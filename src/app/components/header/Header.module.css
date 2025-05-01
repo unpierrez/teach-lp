@@ -1,0 +1,158 @@
+.header {
+    background-color: #fff;
+    color: var(--primary);
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+  }
+
+  .menuWrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .menuWrapper ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .menuWrapper ul li {
+    transition: all 0.2s ease;
+    border-bottom: 2px solid transparent;
+    border-radius: 2px;
+  }
+
+  .menuWrapper ul li:hover { 
+    border-bottom: 2px solid var(--primary);
+  }
+
+  .menuWrapper ul li:last-child::after {
+    content: "";
+    background-image: url(/assets/chevron-down.svg);
+    background-size: 21px;
+    width: 18.24px;
+    height: 15px;
+    display: inline-flex;
+    position: relative;
+    bottom: 0px;
+    left: 7px;
+  }
+  
+  .buttonsWrapper button,
+  .menuWrapper ul li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+  }
+
+  .buttonsWrapper {
+    display: flex;
+    gap: 20px;  
+  }
+
+ .buttonsWrapper .logInButton {
+    background-color: #fff;
+    border: none;
+ }
+
+ .buttonsWrapper .signUpButton {
+    width: 153px;
+    border: 2px solid var(--primary);
+    background-color: #fff;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .logo {
+  display: flex;
+  width: 85px;
+  margin-right: 56px;
+  height: 40px;
+}
+
+.burgerButton {
+  display: none;
+  background: none;
+  margin-top: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .menuWrapper ul,
+  .buttonsWrapper {
+    display: none;
+  }
+
+  .burgerButton {
+    display: block;
+  }
+
+  .navList.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 67px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    gap: 10px;
+    z-index: 999;
+    border-top: 1px solid var(--primary);
+  }
+
+  .menuWrapper ul li:last-child:after {
+    display: none;
+  }
+
+  .header {
+    padding: 0 16px;
+    height: 67px;
+  }
+
+  .mobileButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  
+  .mobileButtons .logInButton {
+    background-color: transparent;
+    letter-spacing: .5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+  }
+  
+  .mobileButtons .signUpButton {
+    background-color: transparent;
+    letter-spacing: .5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .menuWrapper ul li {
+    border-bottom: 1px solid var(--primary);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+  }
+}
