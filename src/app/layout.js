@@ -1,6 +1,7 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Header from "./components/header/Header";
+import Header from "./components/header/Header.component";
+import { Footer } from "./components/footer/Footer.component";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body className={`${roboto.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
