@@ -1,0 +1,212 @@
+.heroContainer {
+    min-height: 704px;
+    display: flex;
+    padding: 70px 80px;
+    justify-content: space-between;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 575px;
+    gap: 32px;
+}
+
+.contentWrapper h1 {
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 72px;
+    z-index: 1;
+}
+
+.contentWrapper h1:before {
+    content: '';
+    display: flex;
+    background-image: url('/assets/title-dec.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 190px;
+    height: 25px;
+    position: relative;
+    top: 87px;
+    z-index: -1;
+}
+
+.contentWrapper p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 160%;
+    color: var(--primary);
+}
+
+.buttonWrapper {
+    display: flex;
+    gap: 32px;
+}
+
+.primaryButton {
+    background-color: #EA580C;
+    width: 100%;
+    height: 64px;
+    max-width: 239px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.demoAccess {
+    color: #2563EB;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 12px;
+}
+
+.companiesText p {
+    color: #475569;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-wrap-mode: nowrap !important;
+}
+
+.companiesWrapper {
+    display: flex;
+    gap: 48px;
+    padding: 32px;
+}
+
+.companiesLogos {
+    display: flex;
+    gap: 48px;
+}
+
+.companiesLogos img {
+    width: 28px;
+    height: 32px;
+}
+
+@media(max-width: 1360px) {
+
+    .imageWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imageWrapper img {
+        width: 500px;
+    }
+
+    .contentWrapper {
+        max-width: 415px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .imageWrapper img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .contentWrapper h1:before {
+        top: 75px;
+        width: 175px;
+    }
+    .contentWrapper {
+        max-width: 100%
+    }
+    .heroContainer {
+        flex-direction: column;
+    }
+
+    .contentWrapper h1 {
+        font-size: 60px;
+    }
+
+    .contentWrapper p {
+        font-size: 20px;
+    }
+
+    .primaryButton, .demoAccess {
+        font-size: 20px !important;
+    }
+
+    .companiesWrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .companiesWrapper {
+        padding: 0;
+        padding-bottom: 48px !important;
+        gap: 20px;
+    }
+
+    .contentWrapper h1 {
+        font-size: 40px;
+    }
+
+    .contentWrapper p {
+        font-size: 16px;
+    }
+
+    .contentWrapper h1:before {
+        width: 117px;
+        top: 58px
+    }
+
+    .heroContainer {
+        padding: 16px 16px;
+    }
+
+    .primaryButton {
+        font-size: 16px !important;
+        width: 153px;
+        height: 48px;
+    }
+
+    .demoAccess {
+        font-size: 16px !important;
+    }
+
+    .companiesText {
+        display: flex;
+        gap: 5px;
+    }
+    
+    .companiesLogos {
+        gap: 24px;
+    }
+
+    .imageWrapper {
+        margin: 16px;
+    }
+
+    .imageWrapper img {
+        width: 350px;
+        height: 329px;
+    }
+}
+
+@media (max-width: 370px) {
+    .imageWrapper img {
+        width: 300px;
+        height: 280px;
+    }
+}

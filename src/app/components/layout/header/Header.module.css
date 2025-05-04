@@ -22,12 +22,12 @@
 
   .menuWrapper ul li {
     transition: all 0.2s ease;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     border-radius: 2px;
   }
 
   .menuWrapper ul li:hover { 
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 3px solid var(--primary);
   }
 
   .menuWrapper ul li:last-child::after {
@@ -63,7 +63,7 @@
 
  .buttonsWrapper .signUpButton {
     width: 153px;
-    border: 2px solid var(--primary);
+    border: 2px solid var(--primary) !important;
     background-color: #fff;
     height: 48px;
     border-radius: 8px;
@@ -71,6 +71,12 @@
     justify-content: center;
     align-items: center;
  }
+
+ .signUpButton:hover {
+  background-color: #ea580c;
+  color: #fff;
+  border-color: #ea580c !important;
+}
 
  .logo {
   display: flex;
@@ -87,7 +93,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .menuWrapper ul,
   .buttonsWrapper {
     display: none;
@@ -97,6 +103,12 @@
     display: block;
   }
 
+  
+ .signUpButton:hover {
+    background-color: #fff;
+    color: var(--primary);
+ }
+
   .navList.open {
     display: flex;
     flex-direction: column;
@@ -105,10 +117,19 @@
     left: 0;
     width: 100%;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     gap: 10px;
     z-index: 999;
     border-top: 1px solid var(--primary);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .menuWrapper ul li:hover { 
+    border-bottom: 1px solid var(--primary);
+  }
+
+  .navList.open .mobileButtons {
+    margin-top: 0;
   }
 
   .menuWrapper ul li:last-child:after {
