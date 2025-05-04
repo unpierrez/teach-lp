@@ -70,6 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.1s ease;
  }
 
  .signUpButton:hover {

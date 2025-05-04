@@ -26,11 +26,12 @@
     background-image: url('/assets/title-dec.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 190px;
+    width: 193px;
     height: 25px;
     position: relative;
     top: 87px;
     z-index: -1;
+    left: 7px;
 }
 
 .contentWrapper p {
@@ -124,7 +125,8 @@
 
     .contentWrapper h1:before {
         top: 75px;
-        width: 175px;
+        width: 170px;
+        left: 0px;
     }
     .contentWrapper {
         max-width: 100%
