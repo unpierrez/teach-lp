@@ -63,6 +63,10 @@
     color: #fff;
 }
 
+.primaryButton:hover {
+    background-color: #C2410C;
+}
+
 .demoAccess {
     color: #2563EB;
     font-size: 20px;

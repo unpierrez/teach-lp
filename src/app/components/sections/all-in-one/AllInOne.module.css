@@ -1,0 +1,361 @@
+.container {
+    min-height: 704px;
+    padding: 80px 80px;
+    display: flex;
+    align-items: center;
+    background-image: url(/assets/blob.svg);
+    background-size: 362px;
+    background-position-y: 68%;
+    background-position-x: 62%;
+    background-repeat: no-repeat;
+    align-items: center;
+    min-height: 704px;
+    padding: 80px;
+    display: flex
+;
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.textWrapper h2 {
+    color: var(--primary);
+    font-size: 56px;
+    font-weight: 800;
+    max-width: 544px;
+    z-index: 1;
+}
+
+.textWrapper h2::after {
+    content: "";
+    z-index: -1;
+    background-image: url(/assets/title-dec.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 247px;
+    height: 25px;
+    display: flex;
+    position: relative;
+    top: -90px;
+    left: 80px;
+}
+
+.textWrapper ul {
+    list-style: none;
+    margin-left: 25px;
+    margin-top: -25px;
+}
+
+.textWrapper ul li {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    display: flex;
+}
+
+.textWrapper ul li::before {
+    content: "";
+    background-image: url(/assets/check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 9px;
+    display: flex;
+    position: relative;
+    top: 14px;
+    right: 11px;
+}
+
+.textWrapper a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    display: flex;
+    gap: 13px;
+    color: #2563EB;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoImage {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    position: relative;
+    left: 9%;
+}
+
+.cardsWrapper {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 65%;
+}
+
+.card {
+    max-width: 200px;
+    min-width: 200px;
+    height: 232px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tag {
+    width: 71px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.tagFeatured {
+    background-color: #F3E8FF;
+    color: #6B21A8;
+}
+
+.tagPopular {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+    width: 65px;
+}
+
+.tagNew {
+    background-color: #DCFCE7;
+    color: #166534;
+    width: 44px !important;
+}
+
+.card p:nth-child(2) {
+    color: #0F172A;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+}
+
+.card p:nth-child(3) {
+   color: #475569;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 140%;
+}
+
+.card button {
+    border: 2px solid #2563EB;
+    max-width: 168px;
+    width: 100%;
+    border-radius: 8px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2563EB;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.card button:hover {
+    background-color: #2563EB;
+    color: #fff;
+}
+
+.imageWrapper::before {
+    content: "";
+    z-index: 1;
+    background-image: url(/assets/stars.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: -27px;
+    right: 14%;
+}
+
+.hidenText {
+    display: none;
+}
+
+@media (max-width: 1920px) {
+    .imageWrapper:before {
+        top: -65px;
+        right: 0%;
+    }
+}
+
+@media (max-width: 1680px) {
+    .imageWrapper::before {
+        top: -27px;
+        right: 14%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        flex-direction: column;
+        gap: 135px;
+        margin-bottom: 80px;
+        margin-top: -75px;
+    }
+
+    .textWrapper {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .imageWrapper:before {
+        content: "";
+        z-index: 1;
+        background-image: url("/assets/stars.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        top: -210px;
+        right: -54%;
+    }
+}
+
+@media(max-width: 768px) {
+    .card:last-child {
+        display: none;
+    }
+
+    .imageWrapper:before {
+        right: -37%;
+        top: -27%;
+    }
+
+    .container {
+        padding: 16px;
+        padding-bottom: 45px;
+        background-position: 13% 97%;
+        background-size: 275px;
+        gap: 30px;
+        margin-top: 35px;
+    }
+
+    .textWrapper h2 {
+        font-size: 24px;
+    }
+
+    .textWrapper a {
+        font-size: 16px;
+    }
+
+    .videoImage {
+        left: 0%;
+    }
+
+    .textWrapper h2:after {
+        background-size: contain;
+        width: 112px;
+        top: -10px;
+        left: 31px;
+    }
+
+    .card p:nth-child(3) {
+        font-size: 12px;
+    }
+
+    .card p:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .imageWrapper {
+        width: 80%;
+    }
+
+    .card {
+        min-width: 160px;
+        max-width: 160px;
+    }
+
+    .container {
+        margin-bottom: 145px;
+    }
+
+    .hidenText {
+        display: flex;
+        color: var(--primary);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        margin-top: -30px;
+        margin-bottom: 5%;
+    }
+}
+
+@media(max-width: 480px) {
+    .imageWrapper {
+        width: 100%;
+    }
+
+    .container {
+        background-position: -25% 100%;
+        background-size: 258px;
+    }
+
+    .videoImage {
+        max-width: 402px;
+        min-width: 402px;
+    }
+
+    .imageWrapper:before {
+        top: -56%;
+        right: -29%;
+        background-size: 112px;
+    }
+
+    .textWrapper h2 {
+        max-width: 360px;
+    }
+
+    .textWrapper h2:after {
+        top: -39px;
+    }
+
+    .cardsWrapper {
+        top: 70%;
+        left: 8%;
+    }
+}
+
+@media (max-width: 370px) {
+    .videoImage {
+        min-width: 369px;
+        max-width: 387px;
+    }
+
+    .cardsWrapper {
+        left: 0%;
+    }
+}

@@ -74,9 +74,8 @@
  }
 
  .signUpButton:hover {
-  background-color: #ea580c;
+  background-color: var(--primary) !important;
   color: #fff;
-  border-color: #ea580c !important;
 }
 
  .logo {
