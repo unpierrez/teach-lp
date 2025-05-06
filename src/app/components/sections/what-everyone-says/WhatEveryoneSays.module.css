@@ -1,0 +1,155 @@
+.container {
+    height: 614px;
+    display: flex;
+    flex-direction: column;
+    gap: 83px;
+    margin: 80px;
+    margin-right: 0 !important;
+}
+
+.textWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.cardsWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-left: 80px;
+    padding-bottom: 16px;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    padding-bottom: 16px;
+    padding-left: 32%;
+    position: relative;
+    right: 27px;
+    -ms-overflow-style: none;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 25px;
+    overflow: visible;
+}
+
+.cardsWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.profileWrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.textWrapper h2 {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 110%;
+    color: var(--primary);
+}
+
+.profileText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.arrowsWrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+    max-width: 412px;
+    height: 100%;
+    padding: 32px;
+    width: 412px;
+    min-width: 412px;
+    border-radius: 20px;
+}
+
+.profileText p:nth-child(1) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.profileText p:nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #475569;
+}
+
+.profileImage {
+    max-width: 64px;
+    max-height: 64px;
+}
+
+
+@media (max-width: 1200px) {
+    .cardsWrapper {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1360px) {
+    .textWrapper h2 {
+        font-size: 40px;
+    }
+
+    .cardsWrapper {
+        padding-left: 0;
+        justify-content: flex-start;
+        gap: 16px;
+        overflow-x: scroll;
+    }
+
+    .card {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .textWrapper h2 {
+        font-size: 24px;
+    }
+
+    .cardsWrapper {
+        padding-left: 25px;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        min-width: 280px;
+    }
+
+    .card:nth-child(2) {
+        max-height: 294px;
+    }
+
+    .arrowsWrapper {
+        display: none;
+    }
+
+    .container {
+        gap: 32px;
+        margin-left: 16px;
+        margin-top: 48px;
+        height: 100%;
+    }
+}

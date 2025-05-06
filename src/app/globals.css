@@ -8,6 +8,7 @@ html {
   background: var(--background);
 }
 
+
 html,
 body {
  /* max-width: 1920px; */
@@ -15,6 +16,7 @@ body {
   width: 100%;
   margin: 0 auto;
   overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
 body {
