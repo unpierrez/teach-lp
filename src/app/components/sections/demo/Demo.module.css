@@ -1,0 +1,146 @@
+.container {
+    height: 679px;
+    background-color: #EA580C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formWrapper, .form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formWrapper {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.formWrapper h2 {
+    font-size: 56px;
+    line-height: 110%;
+    font-weight: 800;
+    color: #fff;
+}
+
+.formWrapper p {
+    font-size: 32px;
+    line-height: 160%;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0%;
+}
+
+.form button {
+    width: 260px;
+    height: 64px;
+    background-color: var(--primary);
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.form {
+    align-items: center;
+}
+
+.form .input {
+    width: 550px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form .input::placeholder {
+    color: #A6A6A6;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 24px;
+}
+
+.textarea {
+    width: 550px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+}
+
+.textarea::placeholder {
+    color: #A6A6A6;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 24px;
+    padding-top: 20px;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Inter;
+    line-height: 100%;
+    color: #fff;
+    text-align: left;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 0 80px;
+    }
+    .form .input {
+        width: 100%;
+    }
+
+    .textarea {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 16px;
+        height: 610px;
+    }
+
+    .formWrapper {
+        text-align: center;
+    }
+
+    .formWrapper h2 {
+        font-size: 32px;
+        line-height: 110%;
+        font-weight: 700;
+    }
+
+    .formWrapper p {
+        font-size: 18px;
+        line-height: 160%;
+        font-weight: 400;
+    }
+
+    .form .button {
+        width: 201px;
+        height: 56px;
+        font-size: 20px;
+    }
+}

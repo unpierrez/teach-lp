@@ -5,6 +5,8 @@ import { MariePoirot } from "./components/sections/marie-poirot/MariePoirot.sect
 import { International } from "./components/sections/international/Internation.section";
 import { Numbers } from "./components/sections/numbers/Numbers.section";
 import { WhatEveryoneSays } from "./components/sections/what-everyone-says/WhatEveryoneSays.section";
+import { WorldOfLearning } from "./components/sections/world-of-learning/WorldOfLearning.section";
+import { Demo } from "./components/sections/demo/Demo.section";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <International />
       <Numbers />
       <WhatEveryoneSays />
+      <WorldOfLearning />
+      <Demo />
     </div>
   );
 }
