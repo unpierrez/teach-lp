@@ -61,6 +61,7 @@
     position: absolute;
     top: 46%;
     left: -60px; 
+    cursor: pointer;
 }
 
 .imageWrapper::after {
@@ -73,6 +74,7 @@
     position: absolute;
     top: 46%;
     right: 0%;
+    cursor: pointer;
 }
 
 @media (max-width: 1360px) {

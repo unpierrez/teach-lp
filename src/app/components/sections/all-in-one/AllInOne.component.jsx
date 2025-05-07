@@ -1,10 +1,25 @@
+
+'use client'
 import styles from './AllInOne.module.css'
+import { motion } from 'framer-motion'
 
 export function AllInOne() {
     return (
-       <section>
-            <div className={styles.container}>
-                <div className={styles.textWrapper}>
+        <section>
+            <motion.div 
+                className={styles.container}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: 'easeOut' }}
+                viewport={{ once: true }}
+            >
+                <motion.div 
+                    className={styles.textWrapper}
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
                     <h2>An all-in-one app that makes it easier</h2>
                     <p className={styles.hidenText}>
                         Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.
@@ -19,31 +34,40 @@ export function AllInOne() {
                         Find more about the app
                         <img src='/assets/arrow-right-blue.svg' alt='arrow right' className={styles.arrowIcon} />
                     </a>
-                </div>
-                <div className={styles.imageWrapper}>
+                </motion.div>
+
+                <motion.div 
+                    className={styles.imageWrapper}
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: 0.4 }}
+                    viewport={{ once: true }}
+                >
                     <img src='/assets/video.svg' alt='video' className={styles.videoImage} />
+
                     <div className={styles.cardsWrapper}>
-                        <div className={styles.card}>
-                            <div className={`${styles.tag} ${styles.tagFeatured}`}>Featured</div>
-                            <p>The map of mathematics</p>
-                            <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
-                            <button>Take Lesson</button>
-                        </div>
-                        <div className={styles.card}>
-                            <div className={`${styles.tag} ${styles.tagPopular}`}>Popular</div>
-                            <p>Design for how people think</p>
-                            <p>Aliquam ut euismod condimentum elementum ultricies volutpat sit non. </p>
-                            <button>Take Lesson</button>
-                        </div>
-                        <div className={styles.card}>
-                            <div className={`${styles.tag} ${styles.tagNew}`}>New</div>
-                            <p>International & commercial law</p>
-                            <p>Molestie integer eu arcu, mauris bibendum rhoncus imperdiet dui.</p>
-                            <button>Take Lesson</button>
-                        </div>
+                        {[
+                            { tag: 'Featured', title: 'The map of mathematics', text: 'Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.', tagStyle: styles.tagFeatured },
+                            { tag: 'Popular', title: 'Design for how people think', text: 'Aliquam ut euismod condimentum elementum ultricies volutpat sit non.', tagStyle: styles.tagPopular },
+                            { tag: 'New', title: 'International & commercial law', text: 'Molestie integer eu arcu, mauris bibendum rhoncus imperdiet dui.', tagStyle: styles.tagNew },
+                        ].map((card, index) => (
+                            <motion.div
+                                className={styles.card}
+                                key={index}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.5 + index * 0.2 }}
+                                viewport={{ once: true }}
+                            >
+                                <div className={`${styles.tag} ${card.tagStyle}`}>{card.tag}</div>
+                                <p>{card.title}</p>
+                                <p>{card.text}</p>
+                                <button>Take Lesson</button>
+                            </motion.div>
+                        ))}
                     </div>
-                </div>
-            </div>
-       </section>
+                </motion.div>
+            </motion.div>
+        </section>
     )
 }
