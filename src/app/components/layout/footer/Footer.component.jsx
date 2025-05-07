@@ -1,5 +1,5 @@
 import styles from './Footer.module.css';
-import { useFooter } from './Footer.hook';
+import { useFooter } from './useFooter';
 
 
 export function Footer() {

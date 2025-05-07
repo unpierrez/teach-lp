@@ -1,13 +1,26 @@
 "use client";
 
-import { useHeader } from "./Header.hook";
+import { useEffect, useState } from "react";
+import { useHeader } from "./useHeader";
 import styles from "./Header.module.css";
 
 export default function Header() {
-  const { menuOpen, toggleMenu, navItems } = useHeader();
+  const { menuOpen, toggleMenu, navItems, setIsSticky, isSticky } = useHeader();
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${isSticky ? styles.sticky : ""}`}
+    >
       <div className={styles.menuWrapper}>
         <img src="/assets/logo.svg" alt="Logo" className={styles.logo} />
 

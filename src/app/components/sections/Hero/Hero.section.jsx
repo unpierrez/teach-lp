@@ -1,5 +1,5 @@
 import styles from './Hero.module.css';
-import { useHero } from './Hero.hook';
+import { useHero } from './useHero';
 
 
 export function Hero() {

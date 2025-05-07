@@ -1,6 +1,6 @@
 import { Card } from './components/Card.component';
 import styles from './WhatEveryoneSays.module.css'
-import { useWhatEveryoneSays } from './WhatEveryoneSays.hook.js';
+import { useWhatEveryoneSays } from './useWhatEveryoneSays.hook.js';
 
 export function WhatEveryoneSays() {
 

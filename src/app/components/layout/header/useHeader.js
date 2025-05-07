@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 export function useHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   const navItems = ["Products", "Solutions", "Pricing", "Resources"];
 
@@ -12,6 +13,7 @@ export function useHeader() {
       setMenuOpen(false);
     }
   };
+  
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
@@ -22,5 +24,7 @@ export function useHeader() {
     menuOpen,
     toggleMenu,
     navItems,
+    isSticky,
+    setIsSticky
   };
 }

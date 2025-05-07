@@ -1,84 +1,94 @@
 .header {
-    background-color: #fff;
-    color: var(--primary);
-    height: 96px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 80px;
-  }
+  background-color: #fff;
+  color: var(--primary);
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  transition: all 0.3s ease;
+}
 
-  .menuWrapper {
-    display: flex;
-    align-items: center;
-  }
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
-  .menuWrapper ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 64px;
-  }
+.menuWrapper {
+  display: flex;
+  align-items: center;
+}
 
-  .menuWrapper ul li {
-    transition: all 0.2s ease;
-    border-bottom: 3px solid transparent;
-    border-radius: 2px;
-  }
+.menuWrapper ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
 
-  .menuWrapper ul li:hover { 
-    border-bottom: 3px solid var(--primary);
-  }
+.menuWrapper ul li {
+  transition: all 0.2s ease;
+  border-bottom: 3px solid transparent;
+  border-radius: 2px;
+}
 
-  .menuWrapper ul li:last-child::after {
-    content: "";
-    background-image: url(/assets/chevron-down.svg);
-    background-size: 21px;
-    width: 18.24px;
-    height: 15px;
-    display: inline-flex;
-    position: relative;
-    bottom: 0px;
-    left: 7px;
-  }
-  
-  .buttonsWrapper button,
-  .menuWrapper ul li {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-  }
+.menuWrapper ul li:hover {
+  border-bottom: 3px solid var(--primary);
+}
 
-  .buttonsWrapper {
-    display: flex;
-    gap: 20px;  
-  }
+.menuWrapper ul li:last-child::after {
+  content: "";
+  background-image: url(/assets/chevron-down.svg);
+  background-size: 21px;
+  width: 18.24px;
+  height: 15px;
+  display: inline-flex;
+  position: relative;
+  bottom: 0px;
+  left: 7px;
+}
 
- .buttonsWrapper .logInButton {
-    background-color: #fff;
-    border: none;
- }
+.buttonsWrapper button,
+.menuWrapper ul li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
 
- .buttonsWrapper .signUpButton {
-    width: 153px;
-    border: 2px solid var(--primary) !important;
-    background-color: #fff;
-    height: 48px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.1s ease;
- }
+.buttonsWrapper {
+  display: flex;
+  gap: 20px;
+}
 
- .signUpButton:hover {
+.buttonsWrapper .logInButton {
+  background-color: #fff;
+  border: none;
+}
+
+.buttonsWrapper .signUpButton {
+  width: 153px;
+  border: 2px solid var(--primary) !important;
+  background-color: #fff;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s ease;
+}
+
+.signUpButton:hover {
   background-color: var(--primary) !important;
   color: #fff;
 }
 
- .logo {
+.logo {
   display: flex;
   width: 85px;
   margin-right: 56px;
@@ -103,11 +113,10 @@
     display: block;
   }
 
-  
- .signUpButton:hover {
+  .signUpButton:hover {
     background-color: #fff;
     color: var(--primary);
- }
+  }
 
   .navList.open {
     display: flex;
@@ -124,7 +133,7 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
 
-  .menuWrapper ul li:hover { 
+  .menuWrapper ul li:hover {
     border-bottom: 1px solid var(--primary);
   }
 
@@ -141,26 +150,21 @@
     height: 67px;
   }
 
+  .sticky {
+    height: 67px;
+  }
+
   .mobileButtons {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-top: 16px;
   }
-  
-  .mobileButtons .logInButton {
-    background-color: transparent;
-    letter-spacing: .5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
-  }
-  
+
+  .mobileButtons .logInButton,
   .mobileButtons .signUpButton {
     background-color: transparent;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;

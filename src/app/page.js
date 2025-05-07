@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import { Hero } from "./components/sections/hero/Hero.section";
-import { AllInOne } from "./components/sections/all-in-one/AllInOne";
+import { AllInOne } from "./components/sections/all-in-one/AllInOne.component";
 import { MariePoirot } from "./components/sections/marie-poirot/MariePoirot.section";
 import { International } from "./components/sections/international/Internation.section";
 import { Numbers } from "./components/sections/numbers/Numbers.section";
