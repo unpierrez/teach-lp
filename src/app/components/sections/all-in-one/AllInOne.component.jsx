@@ -2,8 +2,11 @@
 'use client'
 import styles from './AllInOne.module.css'
 import { motion } from 'framer-motion'
+import { useAllInOne } from './useAllInOne'
 
 export function AllInOne() {
+
+    const { cardsContent } = useAllInOne()
     return (
         <section>
             <motion.div 
@@ -46,11 +49,7 @@ export function AllInOne() {
                     <img src='/assets/video.svg' alt='video' className={styles.videoImage} />
 
                     <div className={styles.cardsWrapper}>
-                        {[
-                            { tag: 'Featured', title: 'The map of mathematics', text: 'Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.', tagStyle: styles.tagFeatured },
-                            { tag: 'Popular', title: 'Design for how people think', text: 'Aliquam ut euismod condimentum elementum ultricies volutpat sit non.', tagStyle: styles.tagPopular },
-                            { tag: 'New', title: 'International & commercial law', text: 'Molestie integer eu arcu, mauris bibendum rhoncus imperdiet dui.', tagStyle: styles.tagNew },
-                        ].map((card, index) => (
+                        {cardsContent.map((card, index) => (
                             <motion.div
                                 className={styles.card}
                                 key={index}

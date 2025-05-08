@@ -6,6 +6,7 @@ import { Numbers } from "./components/sections/numbers/Numbers.section";
 import { WhatEveryoneSays } from "./components/sections/what-everyone-says/WhatEveryoneSays.section";
 import { WorldOfLearning } from "./components/sections/world-of-learning/WorldOfLearning.section";
 import { Demo } from "./components/sections/demo/Demo.section";
+import { CoolFeatures } from "./components/sections/cool-features/CoolFeatures.component";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <International />
       <Numbers />
       <WhatEveryoneSays />
+      <CoolFeatures />
       <WorldOfLearning />
       <Demo />
     </div>

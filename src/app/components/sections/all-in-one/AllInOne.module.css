@@ -11,8 +11,7 @@
     align-items: center;
     min-height: 704px;
     padding: 80px;
-    display: flex
-;
+    display: flex;
 }
 
 .textWrapper {
@@ -55,6 +54,7 @@
     font-size: 20px;
     line-height: 180%;
     display: flex;
+    color: var(--primary);
 }
 
 .textWrapper ul li::before {

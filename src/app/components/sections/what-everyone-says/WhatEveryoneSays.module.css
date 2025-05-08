@@ -102,7 +102,6 @@
     max-height: 64px;
 }
 
-
 @media (max-width: 1200px) {
     .cardsWrapper {
         padding-left: 20px;
