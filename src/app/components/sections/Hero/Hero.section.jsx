@@ -47,7 +47,7 @@ export function Hero() {
               whileHover={{ opacity: 0.8 }}
               href="#"
             >
-              <img src="/assets/play-circle.svg" alt="Play Icon" />
+              <img src="/assets/play-circle.svg" alt="Play Icon" loading="lazy" />
               View Demo
             </motion.a>
           </motion.div>
@@ -86,7 +86,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <img src="/assets/hero-image.jpg" alt="Hero Illustration" />
+          <img src="/assets/hero-image.jpg" alt="Hero Illustration"  loading="lazy"/>
         </motion.div>
       </motion.div>
     </section>

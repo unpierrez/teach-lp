@@ -20,7 +20,7 @@ export function International() {
                     viewport={{ once: true }}
                 >
                     <picture>
-                        <img src="/assets/international-image.svg" alt="International Image" className={styles.internationalImage} />
+                        <img src="/assets/international-image.svg" alt="International Image" className={styles.internationalImage} loading="lazy"/>
                     </picture>
                 </motion.div>
 
@@ -39,7 +39,7 @@ export function International() {
                     </p>
                     <a href="#">
                         Explore teachers and students 
-                        <img src="/assets/arrow-right-blue.svg" alt="Arrow blue" className={styles.arrowBlue} />
+                        <img src="/assets/arrow-right-blue.svg" alt="Arrow blue" className={styles.arrowBlue} loading="lazy" />
                     </a>
                 </motion.div>
             </motion.div>

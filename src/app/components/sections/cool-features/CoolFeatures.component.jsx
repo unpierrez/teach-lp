@@ -26,7 +26,7 @@ export function CoolFeatures() {
                     </p>
                     <a href='#'>
                         View all the features
-                        <img src='/assets/arrow-right-blue.svg' alt='arrow right' className={styles.arrowIcon} />
+                        <img src='/assets/arrow-right-blue.svg' alt='arrow right' className={styles.arrowIcon} loading="lazy" />
                     </a>
                 </motion.div>
 
@@ -61,6 +61,7 @@ export function CoolFeatures() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.7 }}
                             viewport={{ once: true }}
+                            loading="lazy"
                         />
                     </div>
 
@@ -72,6 +73,7 @@ export function CoolFeatures() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.8 }}
                             viewport={{ once: true }}
+                            loading="lazy"
                         />
                         <motion.img
                             src='/assets/pictures/picture-3.svg'
@@ -81,6 +83,7 @@ export function CoolFeatures() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 1.0 }}
                             viewport={{ once: true }}
+                            loading="lazy"
                         />
                     </div>
                 </motion.div>

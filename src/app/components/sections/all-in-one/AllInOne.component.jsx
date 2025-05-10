@@ -35,7 +35,7 @@ export function AllInOne() {
                     </ul>
                     <a href='#'>
                         Find more about the app
-                        <img src='/assets/arrow-right-blue.svg' alt='arrow right' className={styles.arrowIcon} />
+                        <img src='/assets/arrow-right-blue.svg' alt='arrow right' className={styles.arrowIcon} loading="lazy" />
                     </a>
                 </motion.div>
 
@@ -46,7 +46,7 @@ export function AllInOne() {
                     transition={{ duration: 0.6, delay: 0.4 }}
                     viewport={{ once: true }}
                 >
-                    <img src='/assets/video.svg' alt='video' className={styles.videoImage} />
+                    <img src='/assets/video.svg' alt='video' className={styles.videoImage} loading="lazy" />
 
                     <div className={styles.cardsWrapper}>
                         {cardsContent.map((card, index) => (

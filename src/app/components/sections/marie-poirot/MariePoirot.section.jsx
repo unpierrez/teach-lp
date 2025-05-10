@@ -27,7 +27,7 @@ export function MariePoirot() {
                         <p>Marie Poirot,</p>
                         <p>Bigapp</p>
                     </div>
-                    <img src='/assets/pagination.svg' alt='pagination' className={styles.paginationIcon} />
+                    <img src='/assets/pagination.svg' alt='pagination' className={styles.paginationIcon} loading="lazy" />
                 </motion.div>
 
                 <motion.div 
@@ -39,7 +39,7 @@ export function MariePoirot() {
                 >
                     <picture>
                         <source media="(max-width: 768px)" srcSet="/assets/col-mobile.svg" />
-                        <img src="/assets/col.svg" alt="Marie Poirot Image" className={styles.marieImage} />
+                        <img src="/assets/col.svg" alt="Marie Poirot Image" className={styles.marieImage} loading="lazy" />
                     </picture>
                 </motion.div>
             </motion.div>

@@ -26,7 +26,7 @@ export function Numbers() {
                     >
                         <div className={styles.imageWrapper}>
                             <picture>
-                                <img src={item.src} alt={item.alt} className={styles.numbersImage} />
+                                <img src={item.src} alt={item.alt} className={styles.numbersImage} loading="lazy" />
                             </picture>
                         </div>
                         <p>{item.value}</p>

@@ -34,6 +34,7 @@ export function WhatEveryoneSays() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.4, delay: 0.3 }}
                             viewport={{ once: true }}
+                            loading="lazy"
                         />
                         <motion.img
                             src="/assets/arrow-button-right.svg"
@@ -43,6 +44,7 @@ export function WhatEveryoneSays() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.4, delay: 0.4 }}
                             viewport={{ once: true }}
+                            loading="lazy"
                         />
                     </picture>
                 </motion.div>

@@ -50,7 +50,7 @@ export default function Header() {
         onClick={toggleMenu}
         aria-label="Toggle menu"
       >
-        <img src="/assets/menuHamb.svg" alt="Menu" />
+        <img src="/assets/menuHamb.svg" alt="Menu" loading="lazy" />
       </button>
     </header>
   );

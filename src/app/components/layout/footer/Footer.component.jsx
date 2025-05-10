@@ -10,7 +10,7 @@ export function Footer() {
       <div className={styles.footerWrapper}>
         <div className={styles.footerContent}>
           <div className={styles.logoContainer}>
-            <img src="/assets/logo-colored.svg" alt="Logo" className={styles.logo} />
+            <img src="/assets/logo-colored.svg" alt="Logo" className={styles.logo} loading="lazy" />
           </div>
 
           <div className={styles.footerLinks}>
@@ -37,6 +37,7 @@ export function Footer() {
                     src={item.icon}
                     alt={item.alt}
                     className={item.className}
+                    loading="lazy"
                   />
                   <p>{item.label}</p>
                 </a>
@@ -53,6 +54,7 @@ export function Footer() {
             <img
               src="/assets/accessibility.svg"
               alt="Accessibility"
+              loading="lazy"
               className={styles.accessibilityIcon}
             />
           </div>
