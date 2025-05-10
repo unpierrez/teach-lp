@@ -8,11 +8,6 @@ import { WorldOfLearning } from "./components/sections/world-of-learning/WorldOf
 import { Demo } from "./components/sections/demo/Demo.section";
 import { CoolFeatures } from "./components/sections/cool-features/CoolFeatures.component";
 
-export const metadata = {
-  title: 'Teach | Landing Page',
-  description: 'Landing page developed with NextJS and CSS modules.',
-}
-
 export default function Home() {
   return (
     <div>

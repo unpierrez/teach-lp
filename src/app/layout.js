@@ -14,6 +14,14 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+export const metadata = {
+  title: 'Teach | Landing Page',
+  description: 'Landing page developed with NextJS and CSS modules.',
+  icons: {
+    icon: '/favicon.svg',
+  },
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${roboto.variable} ${inter.variable}`}>
