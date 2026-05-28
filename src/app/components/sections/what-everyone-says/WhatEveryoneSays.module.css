@@ -1,10 +1,10 @@
 .container {
-    height: 614px;
     display: flex;
     flex-direction: column;
     gap: 83px;
     margin: 80px;
     margin-right: 0 !important;
+    padding-bottom: 80px;
 }
 
 .textWrapper {
@@ -15,21 +15,16 @@
 
 .cardsWrapper {
     display: flex;
-    justify-content: center;
     gap: 24px;
-    padding-left: 80px;
-    padding-bottom: 16px;
-    scroll-snap-type: x mandatory;
-    overflow-x: auto;
-    padding-bottom: 16px;
     padding-left: 32%;
+    padding-bottom: 32px;
     position: relative;
     right: 27px;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
     -ms-overflow-style: none;
     overscroll-behavior-x: contain;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 25px;
-    overflow: visible;
 }
 
 .cardsWrapper::-webkit-scrollbar {
@@ -77,11 +72,11 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     flex-shrink: 0;
     max-width: 412px;
-    height: 100%;
     padding: 32px;
     width: 412px;
     min-width: 412px;
     border-radius: 20px;
+    scroll-snap-align: start;
 }
 
 .profileText p:nth-child(1) {
