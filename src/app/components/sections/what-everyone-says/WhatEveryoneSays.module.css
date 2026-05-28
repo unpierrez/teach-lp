@@ -21,6 +21,7 @@
     position: relative;
     right: 27px;
     scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
     overflow-x: auto;
     -ms-overflow-style: none;
     overscroll-behavior-x: contain;
@@ -109,7 +110,7 @@
     }
 
     .cardsWrapper {
-        padding-left: 0;
+        padding-left: 20px;
         justify-content: flex-start;
         gap: 16px;
         overflow-x: scroll;
