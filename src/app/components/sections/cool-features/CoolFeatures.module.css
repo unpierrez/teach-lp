@@ -17,6 +17,7 @@
     flex-direction: column;
     gap: 32px;
 }
+
 .imageWrapper::before {
     content: "";
     background-image: url(/assets/bloblob.svg);
@@ -206,7 +207,7 @@
 
     .container {
         padding-left: 16px;
-        padding-right: 0;
+        padding-right: 16px;
         margin-right: 0;
         margin-bottom: 20px;
         height: 100%;
@@ -251,7 +252,7 @@
         top: -10px;
         left: 127px;
     }
- 
+
 }
 
 
@@ -266,10 +267,10 @@
     }
 
     .imageWrapper:before {
-        background-size: 500px;
-        width: 510px;
+        background-size: 400px;
+        width: 100%;
         bottom: -23px;
-        right: -122px;
+        right: 0;
     }
 
     .card:after {

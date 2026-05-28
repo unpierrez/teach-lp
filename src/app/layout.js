@@ -26,9 +26,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${roboto.variable} ${inter.variable}`}>
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <div style={{ overflowX: 'hidden', width: '100%' }}>
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
